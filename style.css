@@ -1,0 +1,209 @@
+/* Common styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background image fills the screen */
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+    background-position: center; /* Centers the background image */
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* Ensures the container sits on top of the background */
+    z-index: 1; /* Ensures the container is above the background */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+    box-sizing: border-box; /* Ensures padding does not increase container size */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 20%; /* Responsive width */
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info p {
+    margin: 8px 0;
+    font-size: 2vw; /* Responsive font size */
+}
+
+.label {
+    color: darkblue;
+}
+
+.skills {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5vw; /* Responsive font size */
+}
+
+.section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2.2vw; /* Responsive font size */
+}
+
+.videos, .images, .clients, .client  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.videos video, .images img, .clients img, .client img {
+    width: 90%; /* Adjusted width */
+    max-width: 200px; /* Adjusted max width */
+    height: auto;
+    margin: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .videos video, .images img, .clients img, .client img {
+        width: 45%; /* Adjusted for smaller screens */
+        margin: 10px 5px;
+    }
+
+    .profile img {
+        width: 30%;
+        margin-right: 10px;
+    }
+
+    .info p, .skills, .section h2 {
+        font-size: 4vw; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .videos video, .images img, .clients img, .client img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .profile img {
+        width: 50%;
+    }
+
+    .info p, .skills, .section h2 {
+        font-size: 5vw; /* Further adjusted font size for very small screens */
+    }
+}
+
+/* Specific styles */
+#vide {
+    color: blue;
+    font-size: 4vw; 
+    text-align: center;
+}
+
+#sss {
+    color: blue;
+}
+
+#sizz {
+    font-size: 3vw; /* Responsive font size */
+}
+
+#sia {
+    color: black;
+}
+
+#ex {
+    font-size: 2.5vw; text-align: center;
+}
+
+#aa {
+    border: none;
+    border-top: 2px solid black;
+    margin: 20px 0;
+}
+
+.z {
+    background-color: rgba(138, 138, 138, 0.5);
+    height: 5px;
+}
+
+.client img {
+    width: 150%; /* Ensure logo is responsive */
+    max-width: 210px; /* Set a maximum width for the logo */
+    height: auto;
+    margin: 17px;
+}
+
+.images img {
+    width: 100%; /* Ensure logo is responsive */
+    max-width: 220px; /* Set a maximum width for the logo */
+    height: auto;
+    margin: 17px;
+}
+
+.logo-container img {
+    width: 250%; /* Reduced width for smaller logo */
+    max-width: 350px; /* Reduced maximum width */
+    height: auto;
+    margin: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .clients img {
+        width: 70%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .client img {
+        width: 50%; /* Adjust width for very small screens */
+    }
+}
+
+/* New CSS rules for the video elements */
+.videos video, .images video {
+    width: 90%; /* Ensure video is responsive */
+    max-width: 200px; /* Set a maximum width for the video */
+    height: auto;
+    margin: 10px;
+}
+
+.logos img {
+    width: 200%; /* Ensure logo is responsive */
+    max-width: 350px; /* Set a maximum width for the logo */
+    height: auto;
+    margin: 14px;    
+}
+
+/* Hover and active states for linked images */
+a img {
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+a:hover img {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px green; 
+}
+
+a:active img {
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px purple; 
+}
